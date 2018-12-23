@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Galada">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gothic+A1">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -26,21 +27,23 @@
                 <div class="collapse navbar-collapse"
                     id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Third Item</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#hero">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#experience">Experience</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact me</a></li>
                     </ul>
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#experience"><button class="btn btn-danger btn-block border rounded border-dark" type="button">Download Resume</button></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="d-sm-flex align-content-center align-items-sm-start" id="hero-intro" style="margin-bottom: 22px;">
-            <div class="text-center border-dark shadow-lg d-flex flex-column justify-content-center align-items-center align-content-center align-items-lg-center bounce animated" id="hero-intro-card"><img class="rounded-circle img-fluid bg-warning border border-primary shadow-lg" src="assets/img/hero.jpg" width="100px" height="100px" style="/*margin-left: 101px;*/margin-bottom: 23px;z-index: 1;"><span style="z-index: 1;">Hello, I am&nbsp;<span class="text-primary">Sharan Kasandula.</span>&nbsp;<br>I
+            <div class="text-center border-dark shadow-lg d-flex flex-column justify-content-center align-items-center align-content-center align-items-lg-center bounce animated" id="hero-intro-card"><img class="rounded-circle img-fluid bg-warning border border-danger shadow-lg" src="assets/img/hero.jpg" width="100px" height="100px" style="/*margin-left: 101px;*/margin-bottom: 23px;z-index: 1;"><span style="z-index: 1;">Hello, I am&nbsp;<span class="text-danger">Sharan Kasandula.</span>&nbsp;<br>I
                 am a full-stack web developer.<br></span>
             </div>
-        </div><a href="#experience" class="btn btn-link btn-block btn-arrow arrow-button"><i class="fa fa-chevron-down pulse animated infinite"></i></a></section>
+        </div><a href="#experience" class="btn btn-link btn-block btn-arrow arrow-button"><i class="fa fa-chevron-down pulse animated infinite text-danger"></i></a></section>
     <section id="experience">
         <h2 data-aos="slide-up" class="section-heading text-center">Experience</h2>
         <div class="container">
@@ -162,7 +165,7 @@
                         </tr>
                         <tr>
                             <td>Databases</td>
-                            <td><span class="badge badge-pill badge-secondary" data-aos="zoom-in">SAP JANA</span><span class="badge badge-pill badge-secondary text-left" data-aos="zoom-in" data-aos-delay="50">My SQL</span><span class="badge badge-pill badge-secondary text-left"
+                            <td><span class="badge badge-pill badge-secondary" data-aos="zoom-in">SAP HANA</span><span class="badge badge-pill badge-secondary text-left" data-aos="zoom-in" data-aos-delay="50">My SQL</span><span class="badge badge-pill badge-secondary text-left"
                                     data-aos="zoom-in" data-aos-delay="100">MongoDB</span><span class="badge badge-pill badge-secondary" data-aos="zoom-in" data-aos-delay="150">Redis</span></td>
                         </tr>
                         <tr>
@@ -194,8 +197,20 @@
             </div>
         </div>
     </section>
+    <section id="contactme">
+        <h2 data-aos="slide-up" class="section-heading">Contact Me</h2>
+    </section>
+    <div class="contact-clean">
+        <form>
+            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+            <div class="form-group"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+            <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Message"></textarea></div>
+            <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
+        </form>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 </body>

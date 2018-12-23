@@ -1,6 +1,7 @@
 body {
   color: rgb(255,255,255);
   background-color: rgb(16,16,16);
+  font-family: 'Gothic A1';
 }
 
 a {
@@ -31,11 +32,9 @@ a {
 }
 
 #hero-intro {
-  font-family: BioRhyme, serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*align-items: left;*/
   height: 100%;
   margin-left: 10%;
   margin-right: 10%;
